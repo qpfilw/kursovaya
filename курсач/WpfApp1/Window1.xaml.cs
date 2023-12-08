@@ -21,6 +21,10 @@ namespace WpfApp1
     {
         string[] policlinicsName;
         string[] doctorsName;
+        //string[] timeDate;
+
+        private string timeFile = "C:\\Users\\user\\OneDrive\\Рабочий стол\\kursovaya\\курсач\\time.txt";
+        private List<string> availableTimes;
 
         public Window1()
         {
@@ -31,37 +35,40 @@ namespace WpfApp1
             {
                 policlinic.Items.Add(policlinics);
             }
+
+            availableTimes = LoadTimesFromFile();
+            UpdateComboBox();
         }
 
         private void policlinic_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-                    doctor.Items.Clear();
+            doctor.Items.Clear();
 
-                    switch (policlinic.SelectedIndex)
-                    {
-                        case 0:
-                            doctorsName = File.ReadAllLines(@"C:\Users\user\OneDrive\Рабочий стол\kursovaya\курсач\doctors\doctors1.txt");
-                            break;
-                        case 1:
-                            doctorsName = File.ReadAllLines(@"C:\Users\user\OneDrive\Рабочий стол\kursovaya\курсач\doctors\doctors2.txt");
-                            break;
-                        case 2:
-                            doctorsName = File.ReadAllLines(@"C:\Users\user\OneDrive\Рабочий стол\kursovaya\курсач\doctors\doctors3.txt");
-                            break;
-                        case 3:
-                            doctorsName = File.ReadAllLines(@"C:\Users\user\OneDrive\Рабочий стол\kursovaya\курсач\doctors\doctors4.txt");
-                            break;
-                        case 4:
-                            doctorsName = File.ReadAllLines(@"C:\Users\user\OneDrive\Рабочий стол\kursovaya\курсач\doctors\doctors5.txt");
-                            break;
-                        default:
-                            MessageBox.Show("Неправильный выбор поликлиники");
-                            return;
-                    }
-                    foreach (string doctors in doctorsName)
-                    {
-                        doctor.Items.Add(doctors);
-                    }
+            switch (policlinic.SelectedIndex)
+            {
+                case 0:
+                    doctorsName = File.ReadAllLines(@"C:\Users\user\OneDrive\Рабочий стол\kursovaya\курсач\doctors\doctors1.txt");
+                    break;
+                case 1:
+                    doctorsName = File.ReadAllLines(@"C:\Users\user\OneDrive\Рабочий стол\kursovaya\курсач\doctors\doctors2.txt");
+                    break;
+                case 2:
+                    doctorsName = File.ReadAllLines(@"C:\Users\user\OneDrive\Рабочий стол\kursovaya\курсач\doctors\doctors3.txt");
+                    break;
+                case 3:
+                    doctorsName = File.ReadAllLines(@"C:\Users\user\OneDrive\Рабочий стол\kursovaya\курсач\doctors\doctors4.txt");
+                    break;
+                case 4:
+                    doctorsName = File.ReadAllLines(@"C:\Users\user\OneDrive\Рабочий стол\kursovaya\курсач\doctors\doctors5.txt");
+                    break;
+                default:
+                    MessageBox.Show("Неправильный выбор поликлиники");
+                    return;
+            }
+            foreach (string doctors in doctorsName)
+            {
+                doctor.Items.Add(doctors);
+            }
         }
 
         private void doctor_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -106,6 +113,49 @@ namespace WpfApp1
             }
         }
 
+        private List<string> LoadTimesFromFile()
+        {
+            List<string> times = new List<string>();
+            try
+            {
+                string[] lines = File.ReadAllLines(timeFile);
+                times.AddRange(lines);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Произошла ошибка при чтении файла: " + ex.Message);
+            }
+            return times;
+        }
+
+        private void UpdateComboBox()
+        {
+            time.ItemsSource = availableTimes;
+        }
+
+        private void time_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (time.SelectedItem != null)
+            {
+                string selectedTime = time.SelectedItem.ToString();
+                availableTimes.Remove(selectedTime);
+                UpdateComboBox();
+                SaveTimesToFile();
+            }
+        }
+
+        private void SaveTimesToFile()
+        {
+            try
+            {
+                string[] timesArray = availableTimes.ToArray();
+                File.WriteAllLines(timeFile, timesArray);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Произошла ошибка при записи файла: " + ex.Message);
+            }
+        }
 
         private void PaymentButton(object sender, RoutedEventArgs e)
         {
@@ -113,6 +163,8 @@ namespace WpfApp1
             window2_PaymentInformation.Show();
             this.Close();
         }
+
+
     }
 }
 
