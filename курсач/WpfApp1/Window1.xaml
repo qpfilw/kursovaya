@@ -28,7 +28,7 @@
         </Border>
         <TextBlock Grid.Row="1" Text="ФИО Пациента:"  FontFamily="Raleway" FontSize="34" HorizontalAlignment="Center" 
                    VerticalAlignment="Center" Foreground="#FF4B6997" Height="41" />
-        <TextBox x:Name="PatientFullName" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Background="#FFF1EFEF" 
+        <TextBox x:Name="patientFullName" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Background="#FFF1EFEF" 
                  BorderBrush="{x:Null}" FontFamily="Raleway" FontSize="20" HorizontalAlignment="Center" 
                  VerticalAlignment="Center" Width="497" Foreground="#FF4B6997" />
         <Border Grid.Row="1" Grid.Column="2">

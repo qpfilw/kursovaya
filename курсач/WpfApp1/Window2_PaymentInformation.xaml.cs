@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Xml.Linq;
 
 namespace WpfApp1
 {
@@ -19,9 +20,11 @@ namespace WpfApp1
     /// </summary>
     public partial class Window2_PaymentInformation : Window
     {
-        public Window2_PaymentInformation()
+        private User user;
+        public Window2_PaymentInformation(User user)
         {
             InitializeComponent();
+            this.user = user;
         }
 
         private void ToPay(object sender, RoutedEventArgs e)
@@ -40,7 +43,5 @@ namespace WpfApp1
 
         }
 
-
-        
     }
 }

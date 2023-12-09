@@ -29,7 +29,7 @@
         </Border>
         <TextBlock Grid.Row="1" Text="Ваше ФИО:"  FontFamily="Raleway" FontSize="34" HorizontalAlignment="Center" 
                VerticalAlignment="Center" Foreground="#FF4B6997" Height="41" />
-        <TextBox x:Name="PatientFullName_PaymentInf" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Background="#FFF1EFEF" 
+        <TextBox x:Name="patientFullName_PaymentInf" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Background="#FFF1EFEF" 
              BorderBrush="{x:Null}" FontFamily="Raleway" FontSize="20" HorizontalAlignment="Center" 
              VerticalAlignment="Center" Width="497" Foreground="#FF4B6997" TextChanged="PatientFullName_PaymentInf_TextChanged"  IsReadOnly="True" />
         <TextBlock Grid.Row="2" Grid.Column="0" Text="Поликлиника:" FontFamily="Raleway" FontSize="34" HorizontalAlignment="Center" 
