@@ -1,0 +1,53 @@
+[
+  {
+    "Name": "First",
+    "Address": "ул. Центральная, 1",
+    "Doctors": [
+      {
+        "NameSpecialization": "Иван",
+        "Service": [
+          "Операция"
+        ],
+        "AvailableDays": [
+          "Вторник"
+        ]
+      },
+      {
+        "NameSpecialization": "Анна",
+        "Service": [
+          "Операция",
+          "Операция2 возвращение"
+        ],
+        "AvailableDays": [
+          "Четверг"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Second",
+    "Address": "ул. Северная, 2",
+    "Doctors": [
+      {
+        "NameSpecialization": "Петр",
+        "Service": [
+          "Операция"
+        ],
+        "AvailableDays": [
+          "Пятница",
+          "Суббота"
+        ]
+      },
+      {
+        "NameSpecialization": "Мария",
+        "Service": [
+          "Операция"
+        ],
+        "AvailableDays": [
+          "Воскресенье",
+          "Понедельник"
+        ]
+      }
+    ]
+  }
+]

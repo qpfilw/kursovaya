@@ -41,23 +41,23 @@
         </Border>
         <TextBlock Grid.Row="2" Grid.Column="0" Text="Поликлиника:" FontFamily="Raleway" FontSize="34" HorizontalAlignment="Center" 
                    VerticalAlignment="Center" Foreground="#FF4B6997" Height="41"></TextBlock>
-        <ComboBox  x:Name="policlinic" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Background="#FFF1EFEF" 
+        <ComboBox  x:Name="policlinicComboBox" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Background="#FFF1EFEF" 
                  BorderBrush="{x:Null}" FontFamily="Raleway" FontSize="20" HorizontalAlignment="Center" 
                  VerticalAlignment="Center" Width="497" Foreground="#FF4B6997" SelectionChanged="policlinic_SelectionChanged">
         </ComboBox>
         <TextBlock Text="Врач:" Grid.Row="3" Grid.Column="0" FontFamily="Raleway" FontSize="34" HorizontalAlignment="Center" 
                    VerticalAlignment="Center" Foreground="#FF4B6997" Height="41"></TextBlock>
-        <ComboBox  x:Name="doctor" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Background="#FFF1EFEF" 
+        <ComboBox  x:Name="doctorComboBox" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Background="#FFF1EFEF" 
                  BorderBrush="{x:Null}" FontFamily="Raleway" FontSize="20" HorizontalAlignment="Center" 
                    VerticalAlignment="Center" Width="497" Foreground="#FF4B6997" SelectionChanged="doctor_SelectionChanged"></ComboBox>
         <TextBlock Text="Услуга:" Grid.Row="4" Grid.Column="0" FontFamily="Raleway" FontSize="34" HorizontalAlignment="Center" 
                    VerticalAlignment="Center" Foreground="#FF4B6997" Height="41"></TextBlock>
-        <ComboBox  x:Name="service" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Background="#FFF1EFEF" 
+        <ComboBox  x:Name="serviceComboBox" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Background="#FFF1EFEF" 
             BorderBrush="{x:Null}" FontFamily="Raleway" FontSize="20" HorizontalAlignment="Center" 
                 VerticalAlignment="Center" Width="497" Foreground="#FF4B6997"></ComboBox>
         <TextBlock Text="Дата:" Grid.Row="5" Grid.Column="0" FontFamily="Raleway" FontSize="34" HorizontalAlignment="Center" 
             VerticalAlignment="Center" Foreground="#FF4B6997" Height="41"></TextBlock>
-        <ComboBox  x:Name="time" Grid.Row="5" Grid.Column="1" Background="#FFF1EFEF" 
+        <ComboBox  x:Name="timeComboBox" Grid.Row="5" Grid.Column="1" Background="#FFF1EFEF" 
             BorderBrush="{x:Null}" FontFamily="Raleway" FontSize="20" HorizontalAlignment="Center" 
                 VerticalAlignment="Center" Width="230" Foreground="#FF4B6997" SelectionChanged="time_SelectionChanged" ></ComboBox>
         <Button x:Name="Payment" Click="PaymentButton" Grid.Row="6" Grid.ColumnSpan="3" Margin="214,21,214,20" Background="#FF84A7DC" Foreground="White" Content="РАССЧИТАТЬ СТОИМОСТЬ" BorderBrush="{x:Null}" FontSize="28" FontFamily="Raleway" >
