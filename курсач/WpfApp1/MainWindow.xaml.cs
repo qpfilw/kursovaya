@@ -28,6 +28,7 @@ namespace WpfApp1
         {
             Window1 registerToTheDoctor = new Window1();
             registerToTheDoctor.Show();
+            this.Close();
         }
     }
 }

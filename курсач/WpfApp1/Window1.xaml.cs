@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Xml.Linq;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace WpfApp1
 {
@@ -19,62 +22,32 @@ namespace WpfApp1
     {
         private List<Policlinic> policlinics;
         private List<Doctor> doctors;
-        private string timeFile = "time.txt";
-        private List<string> availableTimes;
-        private User user;
-
+        private List<string> data = new List<string>();
         public Window1()
         {
             InitializeComponent();
-            LoadPoliclinics();
-            LoadDoctors();
-            availableTimes = LoadTimesFromFile();
-            UpdateComboBox();
-            user = new User();
+            LoadData();
+            UpdateComboBoxes();
+
         }
 
-        private void LoadPoliclinics()
+        private void patientFullName_TextChanged(object sender, TextChangedEventArgs e)
         {
-            policlinics = new List<Policlinic>();
 
-            string[] policlinicNames = File.ReadAllLines("policlinic.txt");
-            foreach (string policlinicName in policlinicNames)
-            {
-                policlinics.Add(new Policlinic(policlinicName));
-                policlinic.Items.Add(policlinicName);
-            }
-        }
-
-        private void LoadDoctors()
-        {
-            doctors = new List<Doctor>();
-
-            string[] doctors1 = File.ReadAllLines("doctors1.txt");
-            string[] doctors2 = File.ReadAllLines("doctors2.txt");
-            string[] doctors3 = File.ReadAllLines("doctors3.txt");
-            string[] doctors4 = File.ReadAllLines("doctors4.txt");
-            string[] doctors5 = File.ReadAllLines("doctors5.txt");
-
-            doctors.Add(new Doctor("Doctor 1", doctors1));
-            doctors.Add(new Doctor("Doctor 2", doctors2));
-            doctors.Add(new Doctor("Doctor 3", doctors3));
-            doctors.Add(new Doctor("Doctor 4", doctors4));
-            doctors.Add(new Doctor("Doctor 5", doctors5));
         }
 
         private void policlinic_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            doctor.Items.Clear();
 
-            int selectedIndex = policlinic.SelectedIndex;
+            int selectedIndex = policlinicComboBox.SelectedIndex;
+            doctorComboBox.Items.Clear();
+
             if (selectedIndex >= 0 && selectedIndex < policlinics.Count)
             {
-                Policlinic selectedPoliclinic = policlinics[selectedIndex];
-                string[] doctorNames = selectedPoliclinic.GetDoctorNames();
-
-                foreach (string doctorName in doctorNames)
+                var selectedPoliclinic = policlinics[selectedIndex];
+                foreach (var doctor in selectedPoliclinic.Doctors)
                 {
-                    doctor.Items.Add(doctorName);
+                    doctorComboBox.Items.Add(doctor.NameSpecialization);
                 }
             }
             else
@@ -83,128 +56,87 @@ namespace WpfApp1
             }
         }
 
-        private void doctor_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void doctor_SelectionChanged(object sender, SelectionChangedEventArgs e) 
         {
-            service.Items.Clear();
-
-            int policlinicIndex = policlinic.SelectedIndex;
-            int doctorIndex = doctor.SelectedIndex;
-
-            if (policlinicIndex >= 0 && policlinicIndex < policlinics.Count &&
-                doctorIndex >= 0 && doctorIndex < doctors.Count)
+            serviceComboBox.Items.Clear(); 
+            timeComboBox.Items.Clear(); 
+            string selectedValue = doctorComboBox.SelectedValue as string;
+            foreach (var hospital in policlinics)
             {
-                Doctor selectedDoctor = doctors[doctorIndex];
-                string[] services = selectedDoctor.GetServices();
-
-                foreach (string serviceLine in services)
+                foreach (var doctor in hospital.Doctors)
                 {
-                    service.Items.Add(serviceLine);
+                    if (doctor.NameSpecialization == selectedValue)
+                    {
+                        foreach (var val in doctor.Service)
+                            serviceComboBox.Items.Add(val);
+
+                        foreach (var val in doctor.AvailableDays)
+                            timeComboBox.Items.Add(val);
+                    }
                 }
-            }
-            else
-            {
-                MessageBox.Show("Неправильный выбор поликлиники или врача");
-            }
-        }
-
-        private List<string> LoadTimesFromFile()
-        {
-            List<string> times = new List<string>();
-            try
-            {
-                string[] lines = File.ReadAllLines(timeFile);
-                times.AddRange(lines);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Произошла ошибка при чтении файла: " + ex.Message);
-            }
-            return times;
-        }
-
-        private void UpdateComboBox()
-        {
-            time.ItemsSource = availableTimes;
-        }
-
-
-        private void time_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (time.SelectedItem != null)
-            {
-                string selectedTime = time.SelectedItem.ToString();
-                availableTimes.Remove(selectedTime);
-                UpdateComboBox();
-                SaveTimesToFile();
-            }
-        }
-
-        private void SaveTimesToFile()
-        {
-            try
-            {
-                string[] timesArray = availableTimes.ToArray();
-                File.WriteAllLines(timeFile, timesArray);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Произошла ошибка при записи файла: " + ex.Message);
             }
         }
 
         private void PaymentButton(object sender, RoutedEventArgs e)
         {
-            if (!string.IsNullOrEmpty(patientFullName.Text))
+            string[] str = PatientFullName.Text.Split(' ');
+            str = str.Where(val => val != "").ToArray();
+            if (str.Length == 3 || (str.Length == 2 && MiddleName.IsChecked == true))
             {
-                user.Name = patientFullName.Text;
-
-                Window2_PaymentInformation window2_PaymentInformation = new Window2_PaymentInformation(user);
-                window2_PaymentInformation.Show();
-                this.Close();
+                if (policlinicComboBox.SelectedItem != null && doctorComboBox.SelectedItem != null
+                    && serviceComboBox.SelectedItem != null && timeComboBox.SelectedItem != null)
+                {
+                    DownloadData(PatientFullName.Text);
+                    Window2_PaymentInformation pay = new Window2_PaymentInformation(data);
+                    pay.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Выберите все данные");
+                }
             }
             else
             {
-                MessageBox.Show("Введите ФИО пользователя");
+                MessageBox.Show("Вы не ввели все данные");
             }
         }
-    }
 
-    public class Policlinic
-    {
-        public string Name { get; }
-        private string[] doctorNames;
-
-        public Policlinic(string name)
+        private void DownloadData(string fio)
         {
-            Name = name;
-            doctorNames = new string[0];
+            data.Add(fio);
+            data.Add(policlinicComboBox.SelectedValue as string);
+            data.Add(doctorComboBox.SelectedValue as string);
+            data.Add(serviceComboBox.SelectedValue as string);
+            data.Add(timeComboBox.SelectedValue as string);
         }
 
-        public string[] GetDoctorNames()
+        private void LoadData()
         {
-            return doctorNames;
+            try
+            {
+                string json = File.ReadAllText("policlinics.json");
+                policlinics = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Policlinic>>(json);
+                
+                doctors = new List<Doctor>(); // Создать новый список докторов
+                foreach (var policlinic in policlinics)
+                {
+                    doctors.AddRange(policlinic.Doctors);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Произошла ошибка при загрузке данных: " + ex.Message);
+            }
         }
-    }
 
-    public class Doctor
-    {
-        public string Name { get; }
-        private string[] services;
-
-        public Doctor(string name, string[] services)
+        private void UpdateComboBoxes()
         {
-            Name = name;
-            this.services = services;
+            policlinicComboBox.Items.Clear();
+            foreach (var policlinic in policlinics)
+            {
+                policlinicComboBox.Items.Add(policlinic.Name);
+            }
         }
-
-        public string[] GetServices()
-        {
-            return services;
-        }
-    }
-
-    public class User
-    {
-        public string Name { get; set; }
     }
 }
