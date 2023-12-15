@@ -23,15 +23,23 @@
             <TextBlock Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Text="ОНЛАЙН ЗАПИСЬ К ВРАЧУ" FontFamily="Raleway"
                        FontSize="34" Foreground="White" TextAlignment="Center" VerticalAlignment="Center" ></TextBlock>
         </Border>
-            <Border Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="2">
+        <Border Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3">
             <TextBlock VerticalAlignment="Center" FontFamily="Raleway" Height="83" Width="533" FontSize="36" TextAlignment="Center"
                        Foreground="#FF4B6997" HorizontalAlignment="Center"><Run Text="Запишитесь к врачу с помощью "/><LineBreak/>
                 <Run Text="нашего удобного приложения" Foreground="#FF4B6997"/></TextBlock>
         </Border>
-        <Button x:Name="register" Click="RegisterButton" Grid.Column="1" Grid.Row="3" Margin="0,18,0,35" Background="#FF84A7DC" 
+        <Button x:Name="register" Click="RegisterButton" Grid.Column="1" Grid.Row="2" Margin="0,42,0,10" Background="#FF84A7DC" 
                 Foreground="White" Content="ЗАПИСАТЬСЯ" BorderBrush="{x:Null}" FontSize="28" FontFamily="Raleway" >
             <Button.Resources>
                 <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="checckInf" Click="CheckButton" Grid.Row="3" Grid.ColumnSpan="3" Margin="143,19,143,35" Background="#FF84A7DC" 
+            Foreground="White" Content="АКТУАЛЬНЫЕ ЗАПИСЬ" BorderBrush="{x:Null}" FontSize="28" FontFamily="Raleway" >
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"/>
                 </Style>
             </Button.Resources>

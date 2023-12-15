@@ -57,8 +57,8 @@
                    Grid.ColumnSpan="2" Margin="18,0,0,0"></TextBlock>
         <Border Grid.Row="6" Grid.Column="2">
             <TextBox  x:Name="FinalSum" Grid.Row="5" Grid.Column="1" Background="#84A7DC" 
-                BorderBrush="{x:Null}" FontFamily="Raleway" FontSize="20" HorizontalAlignment="Left" 
-               VerticalAlignment="Center" Width="187" Foreground="White"  RenderTransformOrigin="0.5,0.5" Margin="54,0,0,0" Height="39" IsReadOnly="True">
+                BorderBrush="{x:Null}" FontFamily="Raleway" FontSize="25" HorizontalAlignment="Left" 
+               VerticalAlignment="Center" Width="187" Foreground="White"  RenderTransformOrigin="0.5,0.5" Margin="54,0,0,0" Height="39" IsReadOnly="True" TextAlignment="Center">
                 <TextBox.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>

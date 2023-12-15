@@ -52,6 +52,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DataReader.cs" />
     <Compile Include="Doctor.cs" />
     <Compile Include="Policlinic.cs" />
     <Compile Include="Window1.xaml.cs">
@@ -59,6 +60,12 @@
     </Compile>
     <Compile Include="Window2_PaymentInformation.xaml.cs">
       <DependentUpon>Window2_PaymentInformation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window3_CheckInf.xaml.cs">
+      <DependentUpon>Window3_CheckInf.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window4_ShowInf.xaml.cs">
+      <DependentUpon>Window4_ShowInf.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -77,6 +84,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Window2_PaymentInformation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window3_CheckInf.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window4_ShowInf.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

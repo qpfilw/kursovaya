@@ -75,9 +75,11 @@ namespace WpfApp1
             }
 
             string updatedJson = JsonConvert.SerializeObject(hospitals, Formatting.Indented);
-
+            SaveData(information);
             File.WriteAllText(filePath, updatedJson);
             MessageBox.Show("Вы успешно записались на прием");
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
             this.Close();
         }
 
@@ -91,13 +93,41 @@ namespace WpfApp1
             LoadPay();
         }
 
+        private void SaveData(List<string> information)
+        {
+            string filePath = "saved.txt";
+
+            try
+            {
+                using (StreamWriter writer = new StreamWriter(filePath, true))
+                {
+                    string data = string.Empty;
+                    for (int i = 0; i < information.Count; i++)
+                    {
+                        data += information[i];
+                        if (i < information.Count - 1)
+                        {
+                            data += ";";
+                        }
+                    }
+                    writer.WriteLine(data);
+                }
+
+                Console.WriteLine("Данные успешно сохранены");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ошибка в сохранении информации: {ex.Message}");
+            }
+        }
+
         private void LoadPay()
         {
             if (information[3] == "Операция")
                 FinalSum.Text = operationCost.ToString();
             else if (information[3] == "Консультация")
                 FinalSum.Text = consultationCost.ToString();
-            else if (information[3] == "Приём")
+            else if (information[3] == "Прием")
                 FinalSum.Text = priemCost.ToString();
             else if (information[3] == "Осмотр")
                 FinalSum.Text = viewCost.ToString();

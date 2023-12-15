@@ -30,5 +30,12 @@ namespace WpfApp1
             registerToTheDoctor.Show();
             this.Close();
         }
+
+        private void CheckButton(object sender, RoutedEventArgs e)
+        {
+            Window3_CheckInf window3_CheckInf = new Window3_CheckInf();
+            window3_CheckInf.Show();
+            this.Close();
+        }
     }
 }
