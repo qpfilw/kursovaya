@@ -37,5 +37,12 @@ namespace WpfApp1
             window3_CheckInf.Show();
             this.Close();
         }
+
+        private void addInf_Click(object sender, RoutedEventArgs e)
+        {
+            Window5_AddInf window5_AddInf = new Window5_AddInf();
+            window5_AddInf.Show();
+            this.Close();
+        }
     }
 }
