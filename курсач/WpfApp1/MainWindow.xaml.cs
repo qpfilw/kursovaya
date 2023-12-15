@@ -28,6 +28,21 @@ namespace WpfApp1
         {
             Window1 registerToTheDoctor = new Window1();
             registerToTheDoctor.Show();
+            this.Close();
+        }
+
+        private void CheckButton(object sender, RoutedEventArgs e)
+        {
+            Window3_CheckInf window3_CheckInf = new Window3_CheckInf();
+            window3_CheckInf.Show();
+            this.Close();
+        }
+
+        private void addInf_Click(object sender, RoutedEventArgs e)
+        {
+            Window5_AddInf window5_AddInf = new Window5_AddInf();
+            window5_AddInf.Show();
+            this.Close();
         }
     }
 }

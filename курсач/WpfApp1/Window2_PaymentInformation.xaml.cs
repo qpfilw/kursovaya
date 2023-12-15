@@ -26,6 +26,15 @@ namespace WpfApp1
         private double operationCost = 5000;
         private double consultationCost = 500;
         private double priemCost = 1000;
+        private double viewCost = 1000;
+        private double visioncheckCost = 7000;
+        private double statementglassesCost = 6000;
+        private double eyesurgeryCost = 100000;
+        private double otitCost = 4000;
+        private double cleanupCost = 1500;
+        private double referenceCost = 300;
+        private double colonoscopyCost = 7500;  
+
 
         private List<string> information;
         public Window2_PaymentInformation(List<string> data)
@@ -66,21 +75,14 @@ namespace WpfApp1
             }
 
             string updatedJson = JsonConvert.SerializeObject(hospitals, Formatting.Indented);
-
+            SaveData(information);
             File.WriteAllText(filePath, updatedJson);
             MessageBox.Show("Вы успешно записались на прием");
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
             this.Close();
         }
 
-        private void PatientFullName_PaymentInf_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void Service_PaymentInf_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
         private void LoadData()
         {
             PatientFullName_PaymentInf.Text = (string)information[0];
@@ -91,17 +93,58 @@ namespace WpfApp1
             LoadPay();
         }
 
+        private void SaveData(List<string> information)
+        {
+            string filePath = "saved.txt";
+
+            try
+            {
+                using (StreamWriter writer = new StreamWriter(filePath, true))
+                {
+                    string data = string.Empty;
+                    for (int i = 0; i < information.Count; i++)
+                    {
+                        data += information[i];
+                        if (i < information.Count - 1)
+                        {
+                            data += ";";
+                        }
+                    }
+                    writer.WriteLine(data);
+                }
+
+                Console.WriteLine("Данные успешно сохранены");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ошибка в сохранении информации: {ex.Message}");
+            }
+        }
+
         private void LoadPay()
         {
             if (information[3] == "Операция")
                 FinalSum.Text = operationCost.ToString();
             else if (information[3] == "Консультация")
                 FinalSum.Text = consultationCost.ToString();
-            else if (information[3] == "Приём")
+            else if (information[3] == "Прием")
                 FinalSum.Text = priemCost.ToString();
+            else if (information[3] == "Осмотр")
+                FinalSum.Text = viewCost.ToString();
+            else if (information[3] == "Проверка зрения")
+                FinalSum.Text = visioncheckCost.ToString();
+            else if (information[3] == "Выписка очков")
+                FinalSum.Text = statementglassesCost.ToString();
+            else if (information[3] == "Операция на улучшение зрения")
+                FinalSum.Text = eyesurgeryCost.ToString();
+            else if (information[3] == "Лечение отита")
+                FinalSum.Text = otitCost.ToString();
+            else if (information[3] == "Чистка ушной серы")
+                FinalSum.Text = cleanupCost.ToString();
+            else if (information[3] == "Выписка справки")
+                FinalSum.Text = referenceCost.ToString();
+            else if (information[3] == "Колоноскопия")
+                FinalSum.Text = colonoscopyCost.ToString();
         }
-
-
-        
     }
 }

@@ -77,33 +77,29 @@ namespace WpfApp1
             }
         }
 
-        private void service_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            //
-        }
-
-        private void time_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            //
-        }
-
         private void PaymentButton(object sender, RoutedEventArgs e)
         {
             string[] str = PatientFullName.Text.Split(' ');
             str = str.Where(val => val != "").ToArray();
-            if (str.Length == 3 || (str.Length==2 && MiddleName.IsChecked==true))
+            if (str.Length == 3 || (str.Length == 2 && MiddleName.IsChecked == true))
             {
-                DownloadData(PatientFullName.Text);
-                Window2_PaymentInformation pay = new Window2_PaymentInformation(data);
-                pay.Show();
-                this.Close();
+                if (policlinicComboBox.SelectedItem != null && doctorComboBox.SelectedItem != null
+                    && serviceComboBox.SelectedItem != null && timeComboBox.SelectedItem != null)
+                {
+                    DownloadData(PatientFullName.Text);
+                    Window2_PaymentInformation pay = new Window2_PaymentInformation(data);
+                    pay.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Выберите все данные");
+                }
             }
             else
             {
-                MessageBox.Show("");
+                MessageBox.Show("Вы не ввели все данные");
             }
-
-            
         }
 
         private void DownloadData(string fio)
@@ -142,7 +138,5 @@ namespace WpfApp1
                 policlinicComboBox.Items.Add(policlinic.Name);
             }
         }
-
     }
-
 }

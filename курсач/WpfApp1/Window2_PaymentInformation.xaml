@@ -31,7 +31,7 @@
                VerticalAlignment="Center" Foreground="#FF4B6997" Height="41" />
         <TextBox x:Name="PatientFullName_PaymentInf" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Background="#FFF1EFEF" 
              BorderBrush="{x:Null}" FontFamily="Raleway" FontSize="20" HorizontalAlignment="Center" 
-             VerticalAlignment="Center" Width="497" Foreground="#FF4B6997" TextChanged="PatientFullName_PaymentInf_TextChanged"  IsReadOnly="True" />
+             VerticalAlignment="Center" Width="497" Foreground="#FF4B6997" IsReadOnly="True" />
         <TextBlock Grid.Row="2" Grid.Column="0" Text="Поликлиника:" FontFamily="Raleway" FontSize="34" HorizontalAlignment="Center" 
                VerticalAlignment="Center" Foreground="#FF4B6997" Height="41"></TextBlock>
         <TextBox  x:Name="Policlinic_PaymentInf" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Background="#FFF1EFEF" 
@@ -46,7 +46,7 @@
                VerticalAlignment="Center" Foreground="#FF4B6997" Height="41"></TextBlock>
         <TextBox  x:Name="Service_PaymentInf" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Background="#FFF1EFEF" 
         BorderBrush="{x:Null}" FontFamily="Raleway" FontSize="20" HorizontalAlignment="Center" 
-            VerticalAlignment="Center" Width="497" Foreground="#FF4B6997" TextChanged="Service_PaymentInf_TextChanged"  IsReadOnly="True"></TextBox>
+            VerticalAlignment="Center" Width="497" Foreground="#FF4B6997" IsReadOnly="True"></TextBox>
         <TextBlock Text="Дата:" Grid.Row="5" Grid.Column="0" FontFamily="Raleway" FontSize="34" HorizontalAlignment="Center" 
         VerticalAlignment="Center" Foreground="#FF4B6997" Height="41"></TextBlock>
         <TextBox  x:Name="DateTime_PaymentInf" Grid.Row="5" Grid.Column="1" Background="#FFF1EFEF" 
@@ -57,8 +57,8 @@
                    Grid.ColumnSpan="2" Margin="18,0,0,0"></TextBlock>
         <Border Grid.Row="6" Grid.Column="2">
             <TextBox  x:Name="FinalSum" Grid.Row="5" Grid.Column="1" Background="#84A7DC" 
-                BorderBrush="{x:Null}" FontFamily="Raleway" FontSize="20" HorizontalAlignment="Left" 
-               VerticalAlignment="Center" Width="187" Foreground="White"  RenderTransformOrigin="0.5,0.5" Margin="54,0,0,0" Height="39" IsReadOnly="True">
+                BorderBrush="{x:Null}" FontFamily="Raleway" FontSize="25" HorizontalAlignment="Left" 
+               VerticalAlignment="Center" Width="187" Foreground="White"  RenderTransformOrigin="0.5,0.5" Margin="54,0,0,0" Height="39" IsReadOnly="True" TextAlignment="Center">
                 <TextBox.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
