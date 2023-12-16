@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows;
@@ -25,7 +27,12 @@ namespace WpfApp1
 
         private void BackToMain_Click(object sender, RoutedEventArgs e)
         {
-            //добавить messagebox который будет информировать о том, что добавление информации прошло успешно
+            string selectedPoliclinic = Policlinic_Inf.Text;
+            string doctorNameSpecialization = Doctor_Inf.Text;
+            string doctorService = Service_Inf.Text;
+            string doctorAvailableDay = DateTime_Inf.Text;
+
+            AddInf.AddDoctorInformation(selectedPoliclinic, doctorNameSpecialization, doctorService, doctorAvailableDay);
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             this.Close();

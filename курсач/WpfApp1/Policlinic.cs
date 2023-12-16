@@ -9,7 +9,6 @@ namespace WpfApp1
     {
         public string Name { get; set; }
 
-        public string Adress { get; set; }
         public List<Doctor> Doctors { get; set; }
     }
 }

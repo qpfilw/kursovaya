@@ -52,6 +52,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddInf.cs" />
     <Compile Include="DataReader.cs" />
     <Compile Include="Doctor.cs" />
     <Compile Include="Policlinic.cs" />
