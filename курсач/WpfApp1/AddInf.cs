@@ -13,20 +13,20 @@ namespace WpfApp1
         private static List<Policlinic> policlinics;
         private const string jsonFilePath = "policlinics.json";
 
-        // Метод для добавления информации о враче и поликлинике
+        //Метод для добавления информации о враче и поликлинике
         public static void AddDoctorInformation(string selectedPoliclinic, string doctorNameSpecialization, string doctorService, string doctorAvailableDay)
         {
-            // Читаем JSON файл
+            //Читаем JSON файл
             string json = File.ReadAllText(jsonFilePath);
 
-            // Десериализуем JSON в список поликлиник
+            //Десериализуем JSON в список поликлиник
             policlinics = JsonConvert.DeserializeObject<List<Policlinic>>(json);
 
-            // Проверяем, существует ли поликлиника с выбранным названием
+            //Проверяем, существует ли поликлиника с выбранным названием
             Policlinic existingPoliclinic = policlinics.Find(p => p.Name == selectedPoliclinic);
             if (existingPoliclinic != null)
             {
-                // Проверяем, существует ли врач с указанной специализацией
+                //Проверяем, существует ли врач с указанной специализацией
                 Doctor existingDoctor = existingPoliclinic.Doctors.Find(d => d.NameSpecialization == doctorNameSpecialization);
                 if (existingDoctor != null)
                 {
@@ -43,20 +43,20 @@ namespace WpfApp1
                 }
                 else
                 {
-                    // Если врач не существует, создаем нового врача и добавляем его в поликлинику
-                    Person newDoctor = new Doctor
+                    //Если врач не существует, создаем нового врача и добавляем его в поликлинику
+                    Doctor newDoctor = new Doctor
                     {
                         NameSpecialization = doctorNameSpecialization,
                         Service = new List<string> { doctorService },
                         AvailableDays = new List<string> { doctorAvailableDay }
                     };
 
-                    existingPoliclinic.Doctors.Add((Doctor)newDoctor);
+                    existingPoliclinic.Doctors.Add(newDoctor);
                 }
             }
             else
             {
-                // Если поликлиника не существует, создаем новую поликлинику и добавляем в нее нового врача
+                //Если поликлиника не существует, создаем новую поликлинику и добавляем в нее нового врача
                 Policlinic newPoliclinic = new Policlinic
                 {
                     Name = selectedPoliclinic,
@@ -75,14 +75,16 @@ namespace WpfApp1
                 policlinics.Add(newPoliclinic);
             }
 
-            // Сериализуем список поликлиник обратно в JSON
+            //Сериализуем список поликлиник обратно в JSON
             string updatedJson = JsonConvert.SerializeObject(policlinics, Formatting.Indented);
 
-            // Записываем обновленный JSON файл
+            //Записываем обновленный JSON файл
             File.WriteAllText(jsonFilePath, updatedJson);
 
-            // Показываем сообщение об успешном добавлении информации
-            MessageBox.Show("Информация успешно добавлена");
+            //Показываем сообщение об успешном добавлении информации
+            MessageBox.Show("Информация успешно добавлена!");
+
+
         }
     }
 }

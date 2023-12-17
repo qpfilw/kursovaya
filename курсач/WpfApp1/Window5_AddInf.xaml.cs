@@ -20,6 +20,8 @@ namespace WpfApp1
     /// </summary>
     public partial class Window5_AddInf : Window
     {
+        
+
         public Window5_AddInf()
         {
             InitializeComponent();

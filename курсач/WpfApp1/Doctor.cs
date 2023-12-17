@@ -5,11 +5,7 @@ using System.Text;
 
 namespace WpfApp1
 {
-    public class Person
-    {
-        public string Name { get; set; }
-    }
-    internal class Doctor : Person
+    internal class Doctor
     {
         public string NameSpecialization { get; set; }
 

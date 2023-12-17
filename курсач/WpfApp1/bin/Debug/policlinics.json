@@ -9,8 +9,7 @@
           "Прием",
           "Осмотр"
         ],
-        "AvailableDays": [],
-        "Name": null
+        "AvailableDays": []
       },
       {
         "NameSpecialization": "Смирнова Варвара Евгеньевна, ортопед",
@@ -21,8 +20,7 @@
         ],
         "AvailableDays": [
           "17.12.23"
-        ],
-        "Name": null
+        ]
       }
     ]
   },
@@ -38,8 +36,7 @@
         ],
         "AvailableDays": [
           "20.12.23"
-        ],
-        "Name": null
+        ]
       },
       {
         "NameSpecialization": "Александров Михаил Ильич, ЛОР",
@@ -51,8 +48,7 @@
         "AvailableDays": [
           "15.12.23",
           "25.12.23"
-        ],
-        "Name": null
+        ]
       }
     ]
   },
@@ -69,8 +65,7 @@
         "AvailableDays": [
           "17.12.23",
           "20.12.23"
-        ],
-        "Name": null
+        ]
       },
       {
         "NameSpecialization": "Шаповалова Виктория Никитична, гастроэнтеролог",
@@ -82,34 +77,7 @@
         "AvailableDays": [
           "25.12.23",
           "27.12.23"
-        ],
-        "Name": null
-      }
-    ]
-  },
-  {
-    "Name": "ГБУЗ ДГП № 7 ДЗМ Филиал № 4 (ДГП № 17)",
-    "Doctors": [
-      {
-        "NameSpecialization": "Аистова Елена Германовна, педиатр",
-        "Service": [
-          "Осмотр"
-        ],
-        "AvailableDays": [],
-        "Name": null
-      }
-    ]
-  },
-  {
-    "Name": "ГП 195 филиал 3 (ул. Молодогвардейская, д. 20)",
-    "Doctors": [
-      {
-        "NameSpecialization": "Юсупов Владислав Николаевич, нейрохирург",
-        "Service": [
-          "Консультация"
-        ],
-        "AvailableDays": [],
-        "Name": null
+        ]
       }
     ]
   }

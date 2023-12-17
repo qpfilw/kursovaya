@@ -29,7 +29,7 @@
          BorderBrush="{x:Null}" FontFamily="Raleway" FontSize="25" HorizontalAlignment="Left" 
          VerticalAlignment="Center" Width="497" Foreground="#FF4B6997" Margin="62,0,0,0" Height="36" />
         <Button x:Name="CheckInf_Button" Grid.Row="3" Background="#FF84A7DC" 
-                Foreground="White" Content="ПОКАЗАТЬ ЗАПИСЬ" BorderBrush="{x:Null}" FontSize="28" FontFamily="Raleway" Margin="162,24,162,24" Grid.ColumnSpan="3" Click="CheckInf_Button_Click">
+                Foreground="White" Content="ПОКАЗАТЬ ЗАПИСЬ" BorderBrush="{x:Null}" FontSize="28" FontFamily="Raleway" Margin="172,24,151,24" Grid.ColumnSpan="3" Click="CheckInf_Button_Click">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>

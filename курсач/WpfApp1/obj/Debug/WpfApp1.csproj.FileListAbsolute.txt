@@ -109,9 +109,3 @@ C:\Prod\kursovaya\курсач\WpfApp1\obj\Debug\Window5_AddInf.g.cs
 C:\Prod\kursovaya\курсач\WpfApp1\obj\Debug\Window3_CheckInf.baml
 C:\Prod\kursovaya\курсач\WpfApp1\obj\Debug\Window4_ShowInf.baml
 C:\Prod\kursovaya\курсач\WpfApp1\obj\Debug\Window5_AddInf.baml
-C:\Users\user\OneDrive\Рабочий стол\kursovaya-Liza\курсач\WpfApp1\obj\Debug\Window3_CheckInf.g.cs
-C:\Users\user\OneDrive\Рабочий стол\kursovaya-Liza\курсач\WpfApp1\obj\Debug\Window4_ShowInf.g.cs
-C:\Users\user\OneDrive\Рабочий стол\kursovaya-Liza\курсач\WpfApp1\obj\Debug\Window5_AddInf.g.cs
-C:\Users\user\OneDrive\Рабочий стол\kursovaya-Liza\курсач\WpfApp1\obj\Debug\Window3_CheckInf.baml
-C:\Users\user\OneDrive\Рабочий стол\kursovaya-Liza\курсач\WpfApp1\obj\Debug\Window4_ShowInf.baml
-C:\Users\user\OneDrive\Рабочий стол\kursovaya-Liza\курсач\WpfApp1\obj\Debug\Window5_AddInf.baml

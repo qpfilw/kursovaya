@@ -31,6 +31,11 @@ namespace WpfApp1
 
         }
 
+        private void patientFullName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
         private void policlinic_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
