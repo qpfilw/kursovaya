@@ -1,0 +1,111 @@
+C:\Users\user\OneDrive\Рабочий стол\курсач\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Users\user\OneDrive\Рабочий стол\курсач\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Users\user\OneDrive\Рабочий стол\курсач\WpfApp1\obj\Debug\WpfApp1.csproj.AssemblyReference.cache
+C:\Users\user\OneDrive\Рабочий стол\курсач\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Users\user\OneDrive\Рабочий стол\курсач\WpfApp1\obj\Debug\Window1.g.cs
+C:\Users\user\OneDrive\Рабочий стол\курсач\WpfApp1\obj\Debug\App.g.cs
+C:\Users\user\OneDrive\Рабочий стол\курсач\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\user\OneDrive\Рабочий стол\курсач\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\user\OneDrive\Рабочий стол\курсач\WpfApp1\obj\Debug\MainWindow.baml
+C:\Users\user\OneDrive\Рабочий стол\курсач\WpfApp1\obj\Debug\Window1.baml
+C:\Users\user\OneDrive\Рабочий стол\курсач\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Users\user\OneDrive\Рабочий стол\курсач\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\user\OneDrive\Рабочий стол\курсач\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+C:\Users\user\OneDrive\Рабочий стол\курсач\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\Рабочий стол\курсач\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\user\OneDrive\Рабочий стол\курсач\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\user\OneDrive\Рабочий стол\курсач\WpfApp1\obj\Debug\Window2_PaymentInformation.g.cs
+C:\Users\user\OneDrive\Рабочий стол\курсач\WpfApp1\obj\Debug\Window2_PaymentInformation.baml
+C:\Users\user\OneDrive\Рабочий стол\kursovaya\курсач\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Users\user\OneDrive\Рабочий стол\kursovaya\курсач\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Users\user\OneDrive\Рабочий стол\kursovaya\курсач\WpfApp1\obj\Debug\WpfApp1.csproj.AssemblyReference.cache
+C:\Users\user\OneDrive\Рабочий стол\kursovaya\курсач\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Users\user\OneDrive\Рабочий стол\kursovaya\курсач\WpfApp1\obj\Debug\Window1.g.cs
+C:\Users\user\OneDrive\Рабочий стол\kursovaya\курсач\WpfApp1\obj\Debug\Window2_PaymentInformation.g.cs
+C:\Users\user\OneDrive\Рабочий стол\kursovaya\курсач\WpfApp1\obj\Debug\App.g.cs
+C:\Users\user\OneDrive\Рабочий стол\kursovaya\курсач\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\user\OneDrive\Рабочий стол\kursovaya\курсач\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\user\OneDrive\Рабочий стол\kursovaya\курсач\WpfApp1\obj\Debug\MainWindow.baml
+C:\Users\user\OneDrive\Рабочий стол\kursovaya\курсач\WpfApp1\obj\Debug\Window1.baml
+C:\Users\user\OneDrive\Рабочий стол\kursovaya\курсач\WpfApp1\obj\Debug\Window2_PaymentInformation.baml
+C:\Users\user\OneDrive\Рабочий стол\kursovaya\курсач\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Users\user\OneDrive\Рабочий стол\kursovaya\курсач\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\user\OneDrive\Рабочий стол\kursovaya\курсач\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+C:\Users\user\OneDrive\Рабочий стол\kursovaya\курсач\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\Рабочий стол\kursovaya\курсач\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\user\OneDrive\Рабочий стол\kursovaya\курсач\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Prod\kursovaya\курсач\WpfApp1\obj\Debug\WpfApp1.csproj.AssemblyReference.cache
+C:\Prod\kursovaya\курсач\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Prod\kursovaya\курсач\WpfApp1\obj\Debug\Window1.g.cs
+C:\Prod\kursovaya\курсач\WpfApp1\obj\Debug\Window2_PaymentInformation.g.cs
+C:\Prod\kursovaya\курсач\WpfApp1\obj\Debug\App.g.cs
+C:\Prod\kursovaya\курсач\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Prod\kursovaya\курсач\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Prod\kursovaya\курсач\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Prod\kursovaya\курсач\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Prod\kursovaya\курсач\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Prod\kursovaya\курсач\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Prod\kursovaya\курсач\WpfApp1\bin\Debug\Newtonsoft.Json.dll
+C:\Prod\kursovaya\курсач\WpfApp1\bin\Debug\Newtonsoft.Json.xml
+C:\Prod\kursovaya\курсач\WpfApp1\obj\Debug\MainWindow.baml
+C:\Prod\kursovaya\курсач\WpfApp1\obj\Debug\Window1.baml
+C:\Prod\kursovaya\курсач\WpfApp1\obj\Debug\Window2_PaymentInformation.baml
+C:\Prod\kursovaya\курсач\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Prod\kursovaya\курсач\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Prod\kursovaya\курсач\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+C:\Prod\kursovaya\курсач\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Prod\kursovaya\курсач\WpfApp1\obj\Debug\WpfApp1.csproj.CopyComplete
+C:\Users\user\OneDrive\Рабочий стол\kursovaya-Liza\курсач\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Users\user\OneDrive\Рабочий стол\kursovaya-Liza\курсач\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Users\user\OneDrive\Рабочий стол\kursovaya-Liza\курсач\WpfApp1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\OneDrive\Рабочий стол\kursovaya-Liza\курсач\WpfApp1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\user\OneDrive\Рабочий стол\kursovaya-Liza\курсач\WpfApp1\obj\Debug\WpfApp1.csproj.AssemblyReference.cache
+C:\Users\user\OneDrive\Рабочий стол\kursovaya-Liza\курсач\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Users\user\OneDrive\Рабочий стол\kursovaya-Liza\курсач\WpfApp1\obj\Debug\Window1.g.cs
+C:\Users\user\OneDrive\Рабочий стол\kursovaya-Liza\курсач\WpfApp1\obj\Debug\Window2_PaymentInformation.g.cs
+C:\Users\user\OneDrive\Рабочий стол\kursovaya-Liza\курсач\WpfApp1\obj\Debug\App.g.cs
+C:\Users\user\OneDrive\Рабочий стол\kursovaya-Liza\курсач\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\user\OneDrive\Рабочий стол\kursovaya-Liza\курсач\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\user\OneDrive\Рабочий стол\kursovaya-Liza\курсач\WpfApp1\obj\Debug\MainWindow.baml
+C:\Users\user\OneDrive\Рабочий стол\kursovaya-Liza\курсач\WpfApp1\obj\Debug\Window1.baml
+C:\Users\user\OneDrive\Рабочий стол\kursovaya-Liza\курсач\WpfApp1\obj\Debug\Window2_PaymentInformation.baml
+C:\Users\user\OneDrive\Рабочий стол\kursovaya-Liza\курсач\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Users\user\OneDrive\Рабочий стол\kursovaya-Liza\курсач\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\user\OneDrive\Рабочий стол\kursovaya-Liza\курсач\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+C:\Users\user\OneDrive\Рабочий стол\kursovaya-Liza\курсач\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\Рабочий стол\kursovaya-Liza\курсач\WpfApp1\obj\Debug\WpfApp1.csproj.CopyComplete
+C:\Users\user\OneDrive\Рабочий стол\kursovaya-Liza\курсач\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\user\OneDrive\Рабочий стол\kursovaya-Liza\курсач\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\user\kursovaya\курсач\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Users\user\kursovaya\курсач\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Users\user\kursovaya\курсач\WpfApp1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\kursovaya\курсач\WpfApp1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\user\kursovaya\курсач\WpfApp1\obj\Debug\WpfApp1.csproj.AssemblyReference.cache
+C:\Users\user\kursovaya\курсач\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Users\user\kursovaya\курсач\WpfApp1\obj\Debug\Window1.g.cs
+C:\Users\user\kursovaya\курсач\WpfApp1\obj\Debug\Window2_PaymentInformation.g.cs
+C:\Users\user\kursovaya\курсач\WpfApp1\obj\Debug\App.g.cs
+C:\Users\user\kursovaya\курсач\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\user\kursovaya\курсач\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\user\kursovaya\курсач\WpfApp1\obj\Debug\MainWindow.baml
+C:\Users\user\kursovaya\курсач\WpfApp1\obj\Debug\Window1.baml
+C:\Users\user\kursovaya\курсач\WpfApp1\obj\Debug\Window2_PaymentInformation.baml
+C:\Users\user\kursovaya\курсач\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Users\user\kursovaya\курсач\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\user\kursovaya\курсач\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+C:\Users\user\kursovaya\курсач\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\user\kursovaya\курсач\WpfApp1\obj\Debug\WpfApp1.csproj.CopyComplete
+C:\Users\user\kursovaya\курсач\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\user\kursovaya\курсач\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\user\kursovaya\курсач\WpfApp1\obj\Debug\Window3_CheckInf.g.cs
+C:\Users\user\kursovaya\курсач\WpfApp1\obj\Debug\Window3_CheckInf.baml
+C:\Users\user\kursovaya\курсач\WpfApp1\obj\Debug\Window4_ShowInf.g.cs
+C:\Users\user\kursovaya\курсач\WpfApp1\obj\Debug\Window4_ShowInf.baml
+C:\Users\user\kursovaya\курсач\WpfApp1\obj\Debug\Window5_AddInf.g.cs
+C:\Users\user\kursovaya\курсач\WpfApp1\obj\Debug\Window5_AddInf.baml
+C:\Prod\kursovaya\курсач\WpfApp1\obj\Debug\Window3_CheckInf.g.cs
+C:\Prod\kursovaya\курсач\WpfApp1\obj\Debug\Window4_ShowInf.g.cs
+C:\Prod\kursovaya\курсач\WpfApp1\obj\Debug\Window5_AddInf.g.cs
+C:\Prod\kursovaya\курсач\WpfApp1\obj\Debug\Window3_CheckInf.baml
+C:\Prod\kursovaya\курсач\WpfApp1\obj\Debug\Window4_ShowInf.baml
+C:\Prod\kursovaya\курсач\WpfApp1\obj\Debug\Window5_AddInf.baml
